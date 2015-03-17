@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BrowseSuburbPage" namespace="" name="BrowseSuburbPage" abstract="false" final="false" start="10" end="97">
+  <file path="/var/www/_modules/geobrowser/trunk/docs/en/phpdox/../../../code" file="BrowseSuburbPage.php" realpath="/var/www/_modules/geobrowser/trunk/code/BrowseSuburbPage.php" size="2252" time="2015-03-14T10:24:05+13:00" unixtime="1426281845" sha1="5a94721eabcffce34bca2e8defeb08db691b3e03" relative="code/BrowseSuburbPage.php"/>
+  <docblock>
+    <description compact="There is no data for this page.">We can use Google Maps to choose suburbs...?</description>
+  </docblock>
+  <extends full="BrowseAbstractPage" namespace="" name="BrowseAbstractPage"/>
+  <member name="icon" type="string" default="&quot;geobrowser/images/treeicons/BrowseSuburbPage&quot;" visibility="public" line="15">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <member name="db" type="array" visibility="public" line="20">
+    <docblock>
+      <description compact="Standard SS static"/>
+    </docblock>
+  </member>
+  <member name="default_parent" type="string" default="&quot;BrowseCitiesPage&quot;" visibility="public" line="28">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <member name="can_be_root" type="{unknown}" default="false" visibility="public" line="33">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <member name="defaults" type="array" visibility="public" line="38">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <method name="getCMSFields" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Standard SS method CMS Fields"/>
+    </docblock>
+  </method>
+  <method name="GeoLevelName" start="56" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Name of the level."/>
+    </docblock>
+  </method>
+  <method name="GeoLevelNumber" start="63" end="65" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="number of the level."/>
+    </docblock>
+  </method>
+  <method name="create_suburb" start="75" end="95" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Creates a region... called from BrowseCountriesPage">param Array $googleMapAddressArray - array of google Map Address Data
+param Object $parent - a BrowseCountriesPage object
+return Object | false - returns the BrowseSuburbPage if there is one.</description>
+    </docblock>
+    <parameter name="googleMapAddressArray" byreference="false" type="{unknown}"/>
+    <parameter name="parent" byreference="false" type="object">
+      <type full="\\BrowseCitiesPage" namespace="\" name="BrowseCitiesPage"/>
+    </parameter>
+  </method>
+  <parent full="BrowseAbstractPage" namespace="" name="BrowseAbstractPage">
+    <extends full="Page" namespace="" name="Page"/>
+    <member name="db" type="array" visibility="public" line="8">
+      <docblock>
+        <description compact="Standard SS static"/>
+      </docblock>
+    </member>
+    <member name="breadcrumbs_delimiter" type="string" default="&quot; &amp;raquo; &quot;" visibility="public" line="19">
+      <docblock>
+        <description compact="Standard SS static"/>
+      </docblock>
+    </member>
+    <method name="canCreate" start="24" end="32" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Standard SS method: can only create if the parent exists..."/>
+      </docblock>
+      <parameter name="member" byreference="false" type="{unknown}" default="null"/>
+    </method>
+    <method name="GeoLevelName" start="37" end="39" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Name of the level"/>
+      </docblock>
+    </method>
+    <method name="GeoLevelNumber" start="44" end="46" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Number of the level"/>
+      </docblock>
+    </method>
+    <method name="allowBrowseChildren" start="52" end="59" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="works out if the child page needs to be created"/>
+      </docblock>
+    </method>
+    <method name="getDataFromTable" start="64" end="76" abstract="false" final="false" static="false" visibility="protected">
+      <docblock>
+        <description compact="retrieves data from a DB table that is not part of the DataObject Model."/>
+      </docblock>
+      <parameter name="tableName" byreference="false" type="{unknown}"/>
+      <parameter name="where" byreference="false" type="{unknown}" default="null"/>
+      <parameter name="orderby" byreference="false" type="{unknown}" default="null"/>
+    </method>
+    <method name="getCMSFields" start="81" end="95" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="standard SS method"/>
+      </docblock>
+      <inline>
+        <comment value="$fields-&gt;addFieldToTab(&quot;Root.Content.AddSubRegion&quot;, new ReadonlyField(&quot;HiddenDataID&quot;, &quot;Data ID number (should have number)&quot;));" line="85"/>
+      </inline>
+    </method>
+    <method name="onBeforeWrite" start="100" end="105" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="standard SS method"/>
+      </docblock>
+    </method>
+  </parent>
+</class>

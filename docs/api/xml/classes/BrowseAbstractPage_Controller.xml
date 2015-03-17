@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BrowseAbstractPage_Controller" namespace="" name="BrowseAbstractPage_Controller" abstract="false" final="false" start="109" end="112">
+  <file path="/var/www/_modules/geobrowser/trunk/docs/en/phpdox/../../../code" file="BrowseAbstractPage.php" realpath="/var/www/_modules/geobrowser/trunk/code/BrowseAbstractPage.php" size="2813" time="2015-03-14T10:24:05+13:00" unixtime="1426281845" sha1="ca4c204f142c63ee38186ac1522b678230ab2bc3" relative="code/BrowseAbstractPage.php"/>
+  <extends full="Page_Controller" namespace="" name="Page_Controller"/>
+  <extender full="BrowseCountriesPage_Controller" namespace="" name="BrowseCountriesPage_Controller"/>
+  <extender full="BrowseWorldPage_Controller" namespace="" name="BrowseWorldPage_Controller"/>
+  <extender full="BrowseCitiesPage_Controller" namespace="" name="BrowseCitiesPage_Controller"/>
+  <extender full="BrowseContinentsPage_Controller" namespace="" name="BrowseContinentsPage_Controller"/>
+  <extender full="BrowseSuburbPage_Controller" namespace="" name="BrowseSuburbPage_Controller"/>
+  <extender full="BrowseRegionsPage_Controller" namespace="" name="BrowseRegionsPage_Controller"/>
+</class>

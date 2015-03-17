@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BrowseRegionsPage" namespace="" name="BrowseRegionsPage" abstract="false" final="false" start="3" end="132">
+  <file path="/var/www/_modules/geobrowser/trunk/docs/en/phpdox/../../../code" file="BrowseRegionsPage.php" realpath="/var/www/_modules/geobrowser/trunk/code/BrowseRegionsPage.php" size="3082" time="2015-03-14T10:24:05+13:00" unixtime="1426281845" sha1="91b8b41f110bea8012e5b184f72dd84e886499aa" relative="code/BrowseRegionsPage.php"/>
+  <extends full="BrowseAbstractPage" namespace="" name="BrowseAbstractPage"/>
+  <member name="icon" type="string" default="&quot;geobrowser/images/treeicons/BrowseRegionsPage&quot;" visibility="public" line="8">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <member name="allowed_children" type="array" visibility="public" line="13">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <member name="default_child" type="string" default="&quot;BrowseCitiesPage&quot;" visibility="public" line="18">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <member name="default_parent" type="string" default="&quot;BrowseCountriesPage&quot;" visibility="public" line="23">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <member name="can_be_root" type="{unknown}" default="false" visibility="public" line="28">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <member name="db" type="array" visibility="public" line="33">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <member name="defaults" type="array" visibility="public" line="40">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </member>
+  <method name="getCMSFields" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Standard SS Static"/>
+    </docblock>
+  </method>
+  <method name="GeoLevelName" start="56" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Name of the level"/>
+    </docblock>
+  </method>
+  <method name="GeoLevelNumber" start="63" end="65" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Number of the level"/>
+    </docblock>
+  </method>
+  <method name="requireDefaultRecords" start="71" end="92" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Setup pages..."/>
+    </docblock>
+  </method>
+  <method name="CreateRegion" start="101" end="130" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Creates a region... called from BrowseCountriesPage">param Array $region - array of region details
+param Object $parent - a BrowseCountriesPage object</description>
+    </docblock>
+    <parameter name="region" byreference="false" type="array"/>
+    <parameter name="parent" byreference="false" type="object">
+      <type full="\\BrowseCountriesPage" namespace="\" name="BrowseCountriesPage"/>
+    </parameter>
+  </method>
+  <parent full="BrowseAbstractPage" namespace="" name="BrowseAbstractPage">
+    <extends full="Page" namespace="" name="Page"/>
+    <member name="db" type="array" visibility="public" line="8">
+      <docblock>
+        <description compact="Standard SS static"/>
+      </docblock>
+    </member>
+    <member name="breadcrumbs_delimiter" type="string" default="&quot; &amp;raquo; &quot;" visibility="public" line="19">
+      <docblock>
+        <description compact="Standard SS static"/>
+      </docblock>
+    </member>
+    <method name="canCreate" start="24" end="32" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Standard SS method: can only create if the parent exists..."/>
+      </docblock>
+      <parameter name="member" byreference="false" type="{unknown}" default="null"/>
+    </method>
+    <method name="GeoLevelName" start="37" end="39" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Name of the level"/>
+      </docblock>
+    </method>
+    <method name="GeoLevelNumber" start="44" end="46" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Number of the level"/>
+      </docblock>
+    </method>
+    <method name="allowBrowseChildren" start="52" end="59" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="works out if the child page needs to be created"/>
+      </docblock>
+    </method>
+    <method name="getDataFromTable" start="64" end="76" abstract="false" final="false" static="false" visibility="protected">
+      <docblock>
+        <description compact="retrieves data from a DB table that is not part of the DataObject Model."/>
+      </docblock>
+      <parameter name="tableName" byreference="false" type="{unknown}"/>
+      <parameter name="where" byreference="false" type="{unknown}" default="null"/>
+      <parameter name="orderby" byreference="false" type="{unknown}" default="null"/>
+    </method>
+    <method name="getCMSFields" start="81" end="95" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="standard SS method"/>
+      </docblock>
+      <inline>
+        <comment value="$fields-&gt;addFieldToTab(&quot;Root.Content.AddSubRegion&quot;, new ReadonlyField(&quot;HiddenDataID&quot;, &quot;Data ID number (should have number)&quot;));" line="85"/>
+      </inline>
+    </method>
+    <method name="onBeforeWrite" start="100" end="105" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="standard SS method"/>
+      </docblock>
+    </method>
+  </parent>
+</class>

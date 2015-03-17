@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BrowseCitiesPage_Controller" namespace="" name="BrowseCitiesPage_Controller" abstract="false" final="false" start="280" end="282">
+  <file path="/var/www/_modules/geobrowser/trunk/docs/en/phpdox/../../../code" file="BrowseCitiesPage.php" realpath="/var/www/_modules/geobrowser/trunk/code/BrowseCitiesPage.php" size="8822" time="2015-03-14T10:24:05+13:00" unixtime="1426281845" sha1="fb804701fcd64e59ae8d2232e9a63b1d7c4ea29a" relative="code/BrowseCitiesPage.php"/>
+  <extends full="BrowseAbstractPage_Controller" namespace="" name="BrowseAbstractPage_Controller"/>
+  <parent full="BrowseAbstractPage_Controller" namespace="" name="BrowseAbstractPage_Controller">
+    <extends full="Page_Controller" namespace="" name="Page_Controller"/>
+  </parent>
+</class>
