@@ -1,22 +1,23 @@
 {
-	"name": "sunnysideup/geobrowser",
-	"type": "silverstripe-module",
-	"description": "create geographic hierarchies using a database of twenty-five-thousand cities",
-	"homepage": "http://www.silverstripe-webdevelopment.com",
-	"keywords": ["geobrowser", "silverstripe"],
-	"license": "Sunny Side Up (BSD-3-Clause and CUSTOM)",
-	"authors":[
-		{
-			"name": "Nicolaas Francken",
-			"homepage": "https://github.com/sunnysideup",
-			"email" : "modules@sunnysideup.co.nz",
-			"role" : "lead developer"
-		}
-	],
-	"require":{
-		"silverstripe/framework": "~2.4"
-	},
-	"extra": {
-		"installer-name": "geobrowser"
-	}	
+    "name": "sunnysideup/geobrowser",
+    "type": "silverstripe-module",
+    "description": "create geographic hierarchies using a database of twenty-five-thousand cities",
+    "keywords": [
+        "geobrowser",
+        "silverstripe"
+    ],
+    "license": "Sunny Side Up (BSD-3-Clause and CUSTOM)",
+    "authors": [
+        {
+            "name": "Nicolaas Francken",
+            "email": "modules@sunnysideup.co.nz",
+            "role": "lead developer"
+        }
+    ],
+    "require": {
+        "silverstripe/framework": "~2.4"
+    },
+    "extra": {
+        "installer-name": "geobrowser"
+    }
 }
