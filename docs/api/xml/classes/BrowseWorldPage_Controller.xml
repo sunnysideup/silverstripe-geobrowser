@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="BrowseWorldPage_Controller" namespace="" name="BrowseWorldPage_Controller" abstract="false" final="false" start="85" end="87">
-  <file path="/var/www/_modules/geobrowser/trunk/docs/en/phpdox/../../../code" file="BrowseWorldPage.php" realpath="/var/www/_modules/geobrowser/trunk/code/BrowseWorldPage.php" size="2121" time="2015-03-14T10:24:05+13:00" unixtime="1426281845" sha1="8a7fcd9df68162d61557578dedf8b91782b295c5" relative="code/BrowseWorldPage.php"/>
-  <extends full="BrowseAbstractPage_Controller" namespace="" name="BrowseAbstractPage_Controller"/>
-  <parent full="BrowseAbstractPage_Controller" namespace="" name="BrowseAbstractPage_Controller">
-    <extends full="Page_Controller" namespace="" name="Page_Controller"/>
-  </parent>
-</class>

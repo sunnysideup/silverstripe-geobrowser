@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="BrowseCountriesPage_Controller" namespace="" name="BrowseCountriesPage_Controller" abstract="false" final="false" start="140" end="142">
-  <file path="/var/www/_modules/geobrowser/trunk/docs/en/phpdox/../../../code" file="BrowseCountriesPage.php" realpath="/var/www/_modules/geobrowser/trunk/code/BrowseCountriesPage.php" size="3688" time="2015-03-14T10:24:05+13:00" unixtime="1426281845" sha1="d4f2f8501d3e24486fd71532de5f3279cf85a665" relative="code/BrowseCountriesPage.php"/>
-  <extends full="BrowseAbstractPage_Controller" namespace="" name="BrowseAbstractPage_Controller"/>
-  <parent full="BrowseAbstractPage_Controller" namespace="" name="BrowseAbstractPage_Controller">
-    <extends full="Page_Controller" namespace="" name="Page_Controller"/>
-  </parent>
-</class>
